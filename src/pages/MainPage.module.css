@@ -1,14 +1,12 @@
 .mainPage {
-    width: 100vw;
     background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);
     overflow: hidden;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: stretch;
-    align-items: flex-start;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+            "leftBar content rightBar";
+
 }

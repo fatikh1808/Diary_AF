@@ -1,0 +1,32 @@
+.profilePage {
+    margin: 20px 5px 5px;
+    text-align: center;
+    align-self: center;
+    background-color: white;
+    width: auto;
+    padding: 20px;
+    border-radius: 13px;
+    height: auto;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "profilePhoto profileOptions profileInfo";
+
+}
+
+.profilePhoto {
+    grid-area: profilePhoto;
+}
+
+.profileOptions {
+    text-align: right;
+    grid-area: profileOptions;
+}
+
+.profileInfo {
+    grid-area: profileInfo;
+}

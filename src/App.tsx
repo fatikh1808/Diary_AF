@@ -1,9 +1,13 @@
 import React from 'react';
 import MainPage from './pages/MainPage';
+import Footer from "./components/footer/Footer";
 
 function App() {
     return (
-        <MainPage/>
+        <div>
+            <MainPage/>
+            <Footer/>
+        </div>
     );
 }
 

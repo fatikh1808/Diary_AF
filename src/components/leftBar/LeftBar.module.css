@@ -1,10 +1,21 @@
 .leftBar {
-    grid-area: leftBar;
+    margin: 5px;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     order: 0;
-    flex: 0.2 1 auto;
-    align-self: flex-start;
+    padding: 5px;
+    grid-area: leftBar;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: #fff;
+    grid-area: leftBar;
+    border-radius: 15px;
 }

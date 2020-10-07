@@ -1,16 +1,22 @@
 import {AnimateSharedLayout, motion} from "framer-motion";
 import s from "./RightBar.module.css";
 import React from "react";
-import MenuItem from "./MenuItem";
-const items = [0, 1, 2];
+import Typography from '@material-ui/core/Typography';
 
 const MenuList = () => {
     return (
         <AnimateSharedLayout>
             <motion.ul className={s.rightBarUl} layout initial={{borderRadius: 25}}>
-                {items.map(item => (
-                    <MenuItem key={item}/>
-                ))}
+                <motion.li className={s.rightBarLi} layout initial={{borderRadius: 10}}>
+                    <Typography align={"center"} variant={"button"}>
+                        Profile
+                    </Typography>
+                </motion.li>
+                <motion.li className={s.rightBarLi} layout initial={{borderRadius: 10}}>
+                    <Typography align={"center"} variant={"button"}>
+                        Log out
+                    </Typography>
+                </motion.li>
             </motion.ul>
         </AnimateSharedLayout>
     );

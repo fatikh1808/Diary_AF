@@ -4,8 +4,7 @@ import {motion, useCycle} from "framer-motion";
 import {useDimensions} from "./use-dimensions";
 import {MenuToggle} from './MenuToggle';
 import Navigation from "./Navigation";
-import "./styles.css";
-import s from './LeftBar.module.css';
+import s from '../leftBar/LeftBar.module.css';
 
 const sidebar = {
     open: (height = 1000) => ({
@@ -40,7 +39,7 @@ const LeftBar = () => {
                 custom={height}
                 ref={containerRef}
             >
-                <motion.div className="background" variants={sidebar}/>
+                <motion.div className={s.background} variants={sidebar}/>
                 <Navigation/>
                 <MenuToggle toggle={() => toggleOpen()}/>
             </motion.nav>

@@ -1,6 +1,7 @@
 import * as React from "react";
 import {motion} from "framer-motion";
 import MenuItem from "./MenuItem";
+import s from './Navigation.module.css';
 
 const variants = {
     open: {
@@ -12,7 +13,7 @@ const variants = {
 };
 
 const Navigation = () => (
-    <motion.ul variants={variants}>
+    <motion.ul variants={variants} className={s.leftBarUl}>
         {itemIds.map(i => (
             <MenuItem i={i} key={i}/>
         ))}

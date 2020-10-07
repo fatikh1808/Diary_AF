@@ -2,7 +2,7 @@ import s from "./RightBar.module.css";
 import Avatar from '@material-ui/core/Avatar';
 import React, {useState} from 'react';
 import {useStyles} from "../../utils/ui/useStyles";
-import {motion, AnimateSharedLayout, AnimatePresence} from "framer-motion";
+import {motion, AnimatePresence} from "framer-motion";
 import MenuList from "./MenuList";
 
 const RightBar = () => {
@@ -27,7 +27,11 @@ const RightBar = () => {
 
     return (
         <div className={s.rightBar}>
-            <motion.li className={s.rightBarIcon} layout onClick={toggleOpen} initial={{borderRadius: 10}}>
+            <motion.li
+                className={s.rightBarIcon}
+                layout
+                onClick={toggleOpen}
+                initial={{borderRadius: 10}}>
                 <AnimatePresence>{isOpen && <MenuList/>}</AnimatePresence>
                 {isOn ? <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.largeAvatar}/>
                     : null}
@@ -35,7 +39,6 @@ const RightBar = () => {
         </div>
     )
 }
-
 
 
 export default RightBar;

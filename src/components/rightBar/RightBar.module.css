@@ -1,10 +1,5 @@
 .rightBar {
-    order: 0;
-    flex: 0.03 1 auto;
-    align-self: auto;
-    margin: 0 5px 5px;
-    padding: 0 5px 5px;
-    float: right;
+    grid-area: rightBar;
 }
 
 .rightBarUl,
@@ -15,7 +10,8 @@
 }
 
 .rightBarUl {
-    width: 300px;
+    width: auto;
+    align-items: center;
     display: flex;
     flex-direction: column;
     background: white;
@@ -33,15 +29,15 @@
     cursor: pointer;
 }
 .rightBarIcon {
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 15px;
+    list-style: none;
     overflow: hidden;
     cursor: pointer;
     float: right;
 }
 
 .rightBarLi:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .rightBarAvatar {

@@ -1,5 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
+import s from './MenuItem.module.css';
 
 const variants = {
     open: {
@@ -27,9 +28,10 @@ const MenuItem = ({ i }: any) => {
             variants={variants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
+            className={s.leftBarLi}
         >
-            <div className="icon-placeholder" style={style} />
-            <div className="text-placeholder" style={style} />
+            <div className={s.leftBarPlaceholder} style={style} />
+            <div className={s.leftBarTextPlaceholder} style={style} />
         </motion.li>
     );
 };
