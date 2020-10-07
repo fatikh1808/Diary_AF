@@ -1,12 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import s from './ProfilePage.module.css';
 import {Typography} from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 
 const ProfilePage = () => {
+
+    const [isChanging, setIsChanging] = useState(false);
+
     return (
         <div className={s.profilePage}>
-            <div className={s.profilePhoto}>
-
+            <div className={s.profilePhoto} onClick={() => console.log('photo clicked')}>
+                <img src={'https://www.blexar.com/avatar.png'} alt={'avatar'}/>
             </div>
             <div className={s.profileOptions}>
                 <Typography variant="button"
@@ -47,6 +51,11 @@ const ProfilePage = () => {
                 <Typography variant="button"
                             display="block"
                             gutterBottom>Tatarstan</Typography>
+            </div>
+            <div className={s.profileBtn} onClick={() => setIsChanging(!isChanging)}>
+                <Button variant="outlined" color="primary">
+                    {isChanging ? "Save info" : "Change info"}
+                </Button>
             </div>
         </div>
 
