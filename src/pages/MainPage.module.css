@@ -1,0 +1,12 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.3fr;
+    grid-template-rows: 1fr 1.1fr 0.9fr;
+    gap: 0px 0px;
+    grid-template-areas:
+            "leftBar content rightbar"
+            "leftBar content rightbar"
+            "leftBar content rightbar";
+}
+.leftBar { grid-area: leftBar; }
+.rightbar { grid-area: rightbar; }
