@@ -6,7 +6,7 @@ import RightBar from "../components/rightBar/RightBar";
 
 const MainPage = () => {
     return (
-        <div className={s.gridContainer}>
+        <div className={s.mainPage}>
             <LeftBar/>
             <Content/>
             <RightBar/>

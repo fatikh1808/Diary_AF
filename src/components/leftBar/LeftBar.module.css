@@ -1,1 +1,10 @@
-.leftBar { grid-area: leftBar; }
+.leftBar {
+    grid-area: leftBar;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    order: 0;
+    flex: 0.2 1 auto;
+    align-self: flex-start;
+}

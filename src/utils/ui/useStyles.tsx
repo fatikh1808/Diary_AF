@@ -34,4 +34,8 @@ export const useStyles = makeStyles((theme) => ({
     submitLog: {
         margin: theme.spacing(3, 0, 2),
     },
+    largeAvatar: {
+        width: theme.spacing(7.6),
+        height: theme.spacing(7.6),
+    },
 }));

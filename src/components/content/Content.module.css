@@ -1,1 +1,7 @@
-.content { grid-area: content; }
+.content {
+    padding: 5px;
+    order: 0;
+    flex: 1 1 auto;
+    align-self: flex-start;
+    margin: 5px 5px 5px 100px;
+}

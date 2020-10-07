@@ -1,1 +1,60 @@
-.rightbar { grid-area: rightbar; }
+.rightBar {
+    order: 0;
+    flex: 0.03 1 auto;
+    align-self: auto;
+    margin: 0 5px 5px;
+    padding: 0 5px 5px;
+    float: right;
+}
+
+.rightBarUl,
+.rightBarLi {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rightBarUl {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 25px;
+    position: initial;
+}
+
+.rightBarLi {
+    background-color: rgba(214, 214, 214, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.rightBarIcon {
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    float: right;
+}
+
+.rightBarLi:last-child {
+    margin-bottom: 0px;
+}
+
+.rightBarAvatar {
+    width: 40px;
+    height: 40px;
+    background-color: #666;
+    border-radius: 20px;
+}
+
+.row {
+    width: 100%;
+    height: 8px;
+    background-color: #999;
+    border-radius: 10px;
+    margin-top: 12px;
+}
