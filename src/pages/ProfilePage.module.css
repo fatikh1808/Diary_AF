@@ -40,6 +40,7 @@ img {
 .profileOptions {
     text-align: right;
     grid-area: profileOptions;
+    margin-top: 5px;
 }
 
 .profileInfo {
@@ -49,4 +50,10 @@ img {
 .profileBtn {
     align-self: center;
     grid-area: profileBtn;
+}
+input {
+    height: 25px;
+    margin-bottom: 11.5px;
+    border-radius: 3px;
+    border-width: 0.6px;
 }
