@@ -13,7 +13,7 @@ const ProfileButton = (props: Props) => {
 
     return(
         <div className={s.profileBtn} onClick={() => setIsChanging(!isChanging)}>
-            <Button variant="outlined" color="primary">
+            <Button variant="outlined" color="primary" size={'medium'}>
                 {isChanging ? "Save info" : "Change info"}
             </Button>
         </div>

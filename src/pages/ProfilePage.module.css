@@ -51,9 +51,18 @@ img {
     align-self: center;
     grid-area: profileBtn;
 }
+
 input {
     height: 25px;
     margin-bottom: 11.5px;
     border-radius: 3px;
     border-width: 0.6px;
+    outline: none;
+    padding-left: 5px;
+}
+
+input:hover, input:focus {
+    -webkit-box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.8);
 }
