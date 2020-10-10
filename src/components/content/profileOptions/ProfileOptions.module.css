@@ -1,0 +1,7 @@
+
+
+.profileOptions {
+    text-align: right;
+    grid-area: profileOptions;
+    margin-top: 5px;
+}

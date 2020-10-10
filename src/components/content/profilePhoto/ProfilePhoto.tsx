@@ -1,4 +1,4 @@
-import s from "../../../pages/ProfilePage.module.css";
+import s from "./ProfilePhoto.module.css";
 import React from "react";
 
 type Props = {

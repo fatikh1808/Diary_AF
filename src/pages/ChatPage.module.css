@@ -1,0 +1,32 @@
+.ChatPage {
+    grid-area: content;
+    width: auto;
+    border-radius: 13px;
+    background-color: white;
+    height: auto;
+    min-height: 600px;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    margin: 20px 5px 5px;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+    grid-template-areas: "ChatList NewMessages MyMessages";
+}
+
+.ChatList {
+    grid-area: ChatList;
+    background-color: red;
+    border-bottom-left-radius: 13px;
+    border-top-left-radius: 13px;
+}
+
+.NewMessages {
+    grid-area: NewMessages;
+}
+
+.MyMessages {
+    grid-area: MyMessages;
+}

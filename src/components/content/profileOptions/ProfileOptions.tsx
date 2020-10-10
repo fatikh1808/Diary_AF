@@ -1,4 +1,4 @@
-import s from "../../../pages/ProfilePage.module.css";
+import s from "./ProfileOptions.module.css";
 import {Typography} from "@material-ui/core";
 import React from "react";
 

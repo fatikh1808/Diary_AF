@@ -1,6 +1,7 @@
-import s from "../../../pages/ProfilePage.module.css";
+import s from "./ProfileInfo.module.css";
 import {Typography} from "@material-ui/core";
 import React from "react";
+import Input from "../../../utils/ui/Input";
 
 type Props = {
     isChanging: boolean
@@ -23,7 +24,7 @@ const ProfileInfo = (props: Props) => {
                                 paragraph
                                 gutterBottom>{item}</Typography>
                 ) : (
-                    <input
+                    <Input
                         value={item}/>
                 ))
             }

@@ -1,4 +1,4 @@
-import s from "../../../pages/ProfilePage.module.css";
+import s from "./ProfileButton.module.css";
 import Button from "@material-ui/core/Button";
 import React from "react";
 

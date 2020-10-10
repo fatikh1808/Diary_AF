@@ -1,0 +1,18 @@
+.profilePhoto {
+    grid-area: profilePhoto;
+    border-radius: 100px;
+    width: 180px;
+    height: 180px;
+    place-self: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.profilePhoto:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+img {
+    width: 180px;
+    border-radius: 100px;
+}
