@@ -1,0 +1,11 @@
+.ChatList {
+    grid-area: ChatList;
+    background-color: red;
+    border-bottom-left-radius: 13px;
+    border-top-left-radius: 13px;
+}
+.item {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 4px 10px;
+}
