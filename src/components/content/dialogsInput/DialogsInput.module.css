@@ -1,0 +1,10 @@
+.DialogsInput {
+    grid-area: DialogsInput;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    grid-template-rows: 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+            "ChatInput ChatButton";
+}

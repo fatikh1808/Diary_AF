@@ -2,7 +2,7 @@
     grid-area: content;
     width: auto;
     border-radius: 13px;
-    background-color: white;
+    background-color: gold;
     height: auto;
     min-height: 600px;
     -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
@@ -10,24 +10,13 @@
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
     margin: 20px 5px 5px;
     display: grid;
-    grid-template-columns: 0.6fr 1fr 1fr;
-    grid-template-rows: 1.5fr 0.5fr;
+    grid-template-columns: 0.6fr 2fr;
+    grid-template-rows: 655px 25px;
     gap: 0;
     grid-template-areas:
-            "ChatList NewMessages MyMessages"
-            "ChatList DialogsInput DialogsInput";
+            "ChatList NewMessages"
+            "ChatList DialogsInput";
 }
 
 
-.NewMessages {
-    grid-area: NewMessages;
-}
 
-.MyMessages {
-    grid-area: MyMessages;
-}
-
-.DialogsInput {
-    grid-area: DialogsInput;
-    background-color: rosybrown;
-}

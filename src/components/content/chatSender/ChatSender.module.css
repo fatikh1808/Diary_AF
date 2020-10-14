@@ -1,0 +1,35 @@
+.ChatSender {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 0.5fr auto;
+    gap: 0px 0px;
+    width: 40%;
+    grid-template-areas: "avatar senderName" "avatar sentTime" "messageBody messageBody";
+    background-color: white;
+    padding: 10px;
+    margin: 10px 52%;
+    border-radius: 10px;
+}
+
+.senderName {
+    grid-area: senderName;
+    font-size: 15px;
+    align-self: center;
+}
+
+.messageBody {
+    grid-area: messageBody;
+}
+
+.avatar {
+    grid-area: avatar;
+    margin: 3px;
+    text-align: center;
+}
+
+.sentTime {
+    grid-area: sentTime;
+    font-size: 10px;
+    align-self: center;
+    text-align: center;
+}
