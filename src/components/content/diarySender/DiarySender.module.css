@@ -1,0 +1,45 @@
+.diarySender {
+    width: 25%;
+    max-width: 25%;
+    border-radius: 5px;
+    place-items: center;
+    flex: 1 0 23%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 0.5fr 1fr;
+    margin: 5px;
+    grid-template-areas: "avatar" "name" "buttons";
+    -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,1);
+    -moz-box-shadow: 0 0 15px 0 rgba(0,0,0,1);
+    box-shadow: 0 0 15px 0 rgba(0,0,0,1);
+}
+
+.avatar {
+    grid-area: avatar;
+}
+img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.name {
+    grid-area: name;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "topBtn" "bottomBtn";
+    grid-area: buttons;
+}
+
+.topBtn {
+    grid-area: topBtn;
+    place-self: center;
+}
+
+.bottomBtn {
+    grid-area: bottomBtn;
+}
